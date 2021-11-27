@@ -150,5 +150,25 @@ namespace PROYECTO_BIBLIOTECA.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_11_26_at_4_53_09_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-11-26 at 4.53.09 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_11_26_at_4_53_09_PM__1_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-11-26 at 4.53.09 PM (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

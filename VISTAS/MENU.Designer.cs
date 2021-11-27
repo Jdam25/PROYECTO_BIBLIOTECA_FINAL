@@ -32,12 +32,12 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
@@ -73,7 +73,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem2;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(794, 152);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -118,16 +118,6 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.toolStripEx1.Size = new System.Drawing.Size(204, 86);
             this.toolStripEx1.TabIndex = 0;
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DoubleClickEnabled = true;
-            this.toolStripButton1.Image = global::PROYECTO_BIBLIOTECA.Properties.Resources.WhatsApp_Image_2021_11_24_at_11_101;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(132, 69);
-            this.toolStripButton1.Text = "REGISTRAR";
-            // 
             // toolStripTabItem2
             // 
             this.toolStripTabItem2.Name = "toolStripTabItem2";
@@ -162,16 +152,6 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.toolStripEx2.Size = new System.Drawing.Size(204, 86);
             this.toolStripEx2.TabIndex = 1;
             // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DoubleClickEnabled = true;
-            this.toolStripButton2.Image = global::PROYECTO_BIBLIOTECA.Properties.Resources.WhatsApp_Image_2021_11_26_at_4_32_45_PM;
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(171, 69);
-            this.toolStripButton2.Text = "ESTADO DEL LIBRO";
-            // 
             // toolStripTabItem3
             // 
             this.toolStripTabItem3.Name = "toolStripTabItem3";
@@ -205,6 +185,26 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.toolStripEx3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.toolStripEx3.Size = new System.Drawing.Size(204, 86);
             this.toolStripEx3.TabIndex = 1;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DoubleClickEnabled = true;
+            this.toolStripButton1.Image = global::PROYECTO_BIBLIOTECA.Properties.Resources.WhatsApp_Image_2021_11_24_at_11_101;
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(132, 69);
+            this.toolStripButton1.Text = "REGISTRAR";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DoubleClickEnabled = true;
+            this.toolStripButton2.Image = global::PROYECTO_BIBLIOTECA.Properties.Resources.WhatsApp_Image_2021_11_26_at_4_32_45_PM;
+            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(171, 69);
+            this.toolStripButton2.Text = "ESTADO DEL LIBRO";
             // 
             // toolStripButton3
             // 

@@ -47,9 +47,9 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(149, 23);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 24);
+            this.label3.Size = new System.Drawing.Size(127, 24);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Bienvenido";
+            this.label3.Text = "¡Bienvenido!";
             // 
             // textBox2
             // 
@@ -96,9 +96,9 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(158, 297);
+            this.button1.Location = new System.Drawing.Point(153, 301);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 24);
+            this.button1.Size = new System.Drawing.Size(106, 31);
             this.button1.TabIndex = 7;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
