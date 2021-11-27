@@ -63,9 +63,30 @@ namespace PROYECTO_BIBLIOTECA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _86446367_libro_con_letras_de_vuelo_del_arte_en_el_fondo_morado_ilustración_vectorial {
+            get {
+                object obj = ResourceManager.GetObject("86446367-libro-con-letras-de-vuelo-del-arte-en-el-fondo-morado-ilustración-vector" +
+                        "ial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descarga {
             get {
                 object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga1 {
+            get {
+                object obj = ResourceManager.GetObject("descarga1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

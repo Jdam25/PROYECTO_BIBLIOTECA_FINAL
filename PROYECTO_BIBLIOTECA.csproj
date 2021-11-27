@@ -66,6 +66,12 @@
     <Compile Include="VISTAS\ESTADO_LIBRO.Designer.cs">
       <DependentUpon>ESTADO_LIBRO.cs</DependentUpon>
     </Compile>
+    <Compile Include="VISTAS\LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTAS\LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="VISTAS\MENU.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,8 +94,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VISTAS\LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VISTAS\MENU.resx">
       <DependentUpon>MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTAS\REGISTRAR.resx">
+      <DependentUpon>REGISTRAR.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -119,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2021-11-24 at 11.10.44 PM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86446367-libro-con-letras-de-vuelo-del-arte-en-el-fondo-morado-ilustración-vectorial.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
