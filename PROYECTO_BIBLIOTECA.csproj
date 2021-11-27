@@ -94,6 +94,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VISTAS\ESTADO_LIBRO.resx">
+      <DependentUpon>ESTADO_LIBRO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VISTAS\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +140,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\86446367-libro-con-letras-de-vuelo-del-arte-en-el-fondo-morado-ilustración-vectorial.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-11-26 at 4.32.45 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evaluacion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

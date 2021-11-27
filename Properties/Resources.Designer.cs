@@ -94,9 +94,29 @@ namespace PROYECTO_BIBLIOTECA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap evaluacion {
+            get {
+                object obj = ResourceManager.GetObject("evaluacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lista {
+            get {
+                object obj = ResourceManager.GetObject("lista", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -117,6 +137,16 @@ namespace PROYECTO_BIBLIOTECA.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2021_11_24_at_11_101 {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2021-11-24 at 11.101", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_11_26_at_4_32_45_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-11-26 at 4.32.45 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
