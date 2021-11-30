@@ -16,5 +16,10 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         {
             InitializeComponent();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

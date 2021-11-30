@@ -46,6 +46,8 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +55,8 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button3);
@@ -79,7 +83,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(611, 102);
+            this.textBox6.Location = new System.Drawing.Point(611, 95);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(135, 24);
             this.textBox6.TabIndex = 11;
@@ -136,7 +140,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label6.BackColor = System.Drawing.Color.Silver;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(510, 109);
+            this.label6.Location = new System.Drawing.Point(510, 102);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 13);
             this.label6.TabIndex = 9;
@@ -172,10 +176,11 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label4.Size = new System.Drawing.Size(105, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "NOMBRE LIBRO:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(171, 102);
+            this.textBox3.Location = new System.Drawing.Point(171, 95);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(245, 24);
             this.textBox3.TabIndex = 5;
@@ -214,7 +219,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label2.BackColor = System.Drawing.Color.Silver;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(73, 109);
+            this.label2.Location = new System.Drawing.Point(73, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 13);
             this.label2.TabIndex = 1;
@@ -239,6 +244,25 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(804, 182);
             this.dataGridView1.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Silver;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(547, 144);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(57, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "PRECIO:";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(611, 137);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(135, 24);
+            this.txtPrecio.TabIndex = 13;
             // 
             // REGISTRAR
             // 
@@ -277,5 +301,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Label label7;
     }
 }
