@@ -16,5 +16,10 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -124,6 +124,16 @@ namespace PROYECTO_BIBLIOTECA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login_web_dark_screen_template_vector_10474423 {
+            get {
+                object obj = ResourceManager.GetObject("login-web-dark-screen-template-vector-10474423", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2021_11_24_at_11_10_44_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2021-11-24 at 11.10.44 PM", resourceCulture);

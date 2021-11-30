@@ -157,5 +157,8 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2021-11-26 at 4.53.09 PM.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-web-dark-screen-template-vector-10474423.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
