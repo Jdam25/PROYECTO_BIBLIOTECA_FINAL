@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PROYECTO_BIBLIOTECA.VISTAS
 {
-    public partial class ESTADO_LIBRO : Form
+    public partial class TERMINOS : Form
     {
-        public ESTADO_LIBRO()
+        public TERMINOS()
         {
             InitializeComponent();
         }

@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using PROYECTO_BIBLIOTECA.CONTROLADORES;
 
 namespace PROYECTO_BIBLIOTECA.VISTAS
 {
@@ -15,11 +8,10 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         public LOGIN()
         {
             InitializeComponent();
+
+            Login_Controller controlador = new Login_Controller(this);
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

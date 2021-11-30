@@ -128,11 +128,11 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
             this.toolStripTabItem2.Panel.ScrollPosition = 0;
             this.toolStripTabItem2.Panel.TabIndex = 3;
-            this.toolStripTabItem2.Panel.Text = "Esatado del libro";
+            this.toolStripTabItem2.Panel.Text = "Terminos & Condiciones";
             this.toolStripTabItem2.Position = 1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(110, 30);
+            this.toolStripTabItem2.Size = new System.Drawing.Size(139, 30);
             this.toolStripTabItem2.Tag = "2";
-            this.toolStripTabItem2.Text = "Esatado del libro";
+            this.toolStripTabItem2.Text = "Terminos & Condiciones";
             // 
             // toolStripEx2
             // 
@@ -203,8 +203,8 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(171, 69);
-            this.toolStripButton2.Text = "ESTADO DEL LIBRO";
+            this.toolStripButton2.Size = new System.Drawing.Size(145, 69);
+            this.toolStripButton2.Text = "Leer Terminos";
             // 
             // toolStripButton3
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PROYECTO_BIBLIOTECA.VISTAS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace PROYECTO_BIBLIOTECA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LOGIN ());
         }
     }
 }
