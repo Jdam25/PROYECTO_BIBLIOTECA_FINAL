@@ -30,7 +30,7 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
             bool valido = userDao.ValidarUsuario(user);
             if (valido)
             {
-                // MessageBox.Show("Usuario Correcto");
+                MessageBox.Show("Usuario Correcto");
                 MENU menu = new MENU();
                 VISTAS.Hide();
                 menu.Show();
