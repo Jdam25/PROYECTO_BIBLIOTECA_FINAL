@@ -62,14 +62,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONTROLADORES\Cliente_Controller.cs" />
-    <Compile Include="CONTROLADORES\Factura_Controller.cs" />
+    <Compile Include="CONTROLADORES\Detalle_Controller.cs" />
     <Compile Include="CONTROLADORES\Login_Controller.cs" />
     <Compile Include="MODELOS\DAO\ClienteDAO.cs" />
     <Compile Include="MODELOS\DAO\Conexion.cs" />
     <Compile Include="MODELOS\DAO\FacturaDAO.cs" />
     <Compile Include="MODELOS\DAO\UsuarioDao.cs" />
     <Compile Include="MODELOS\ENTIDADES\Cliente.cs" />
-    <Compile Include="MODELOS\ENTIDADES\Factura.cs" />
+    <Compile Include="MODELOS\ENTIDADES\Detalle.cs" />
     <Compile Include="MODELOS\ENTIDADES\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,11 +79,11 @@
     <Compile Include="VISTAS\TERMINOS.Designer.cs">
       <DependentUpon>TERMINOS.cs</DependentUpon>
     </Compile>
-    <Compile Include="VISTAS\FACTURA.cs">
+    <Compile Include="VISTAS\DETALLE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VISTAS\FACTURA.Designer.cs">
-      <DependentUpon>FACTURA.cs</DependentUpon>
+    <Compile Include="VISTAS\DETALLE.Designer.cs">
+      <DependentUpon>DETALLE.cs</DependentUpon>
     </Compile>
     <Compile Include="VISTAS\LOGIN.cs">
       <SubType>Form</SubType>
@@ -116,8 +116,8 @@
     <EmbeddedResource Include="VISTAS\TERMINOS.resx">
       <DependentUpon>TERMINOS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VISTAS\FACTURA.resx">
-      <DependentUpon>FACTURA.cs</DependentUpon>
+    <EmbeddedResource Include="VISTAS\DETALLE.resx">
+      <DependentUpon>DETALLE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTAS\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>

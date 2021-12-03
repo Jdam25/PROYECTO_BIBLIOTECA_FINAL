@@ -17,7 +17,7 @@ namespace PROYECTO_BIBLIOTECA.MODELOS.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" SELECT 1 FROM USUARIO WHERE USUARIO= @Usuario and CONTRASEÑA= @Contraseña");
+                sql.Append(" SELECT 1 FROM USUARIOS WHERE USUARIO= @Usuario and CONTRASEÑA= @Contraseña");
                 comando.Connection = MiConexion;
                 MiConexion.Open();
                 comando.CommandType = CommandType.Text;

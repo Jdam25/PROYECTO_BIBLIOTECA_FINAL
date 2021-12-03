@@ -8,6 +8,7 @@ namespace PROYECTO_BIBLIOTECA.MODELOS.ENTIDADES
 {
     public class Usuario
     {
+        public string Id { get; set; }
         public string Usuarios { get; set; }
         public string Contraseña { get; set; }
 

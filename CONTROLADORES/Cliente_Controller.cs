@@ -22,7 +22,6 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
             vista = view;
             vista.NuevoButton.Click += new EventHandler(Nuevo);
             vista.GuardarButton.Click += new EventHandler(Guardar);
-           
             vista.Load += new EventHandler(Load);
             vista.ModificarButton.Click += new EventHandler(Modificar);
             vista.EliminarButton.Click += new EventHandler(Eliminar);
@@ -30,9 +29,9 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
 
         private void Eliminar(object sender, EventArgs e)
         {
-            if (vista.ClientesdataGridView.SelectedRows.Count > 0)
+            if (vista.RegistrardataGridView.SelectedRows.Count > 0)
             {
-                bool elimino = clienteDAO.EliminarCliente(Convert.ToInt32(vista.ClientesdataGridView.CurrentRow.Cells[0].Value));
+                bool elimino = clienteDAO.EliminarCliente(Convert.ToInt32(vista.RegistrardataGridView.CurrentRow.Cells[0].Value));
                 if (elimino)
                 {
                     MessageBox.Show("Cliente eliminado correctamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -47,18 +46,18 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
 
         private void Modificar(object sender, EventArgs e)
         {
-            if (vista.ClientesdataGridView.SelectedRows.Count > 0)
+            if (vista.RegistrardataGridView.SelectedRows.Count > 0)
             {
                 operacion = "Modificar";
                 HabilitarControles();
 
-                vista.IdtextBox.Text = vista.ClientesdataGridView.CurrentRow.Cells["ID"].Value.ToString();
-                vista.NombreTextBox.Text = vista.ClientesdataGridView.CurrentRow.Cells["NOMBRE"].Value.ToString();
-                vista.NumeroTextBox.Text = vista.ClientesdataGridView.CurrentRow.Cells["EMAIL"].Value.ToString();
-                vista.NombreLTextBox.Text = vista.ClientesdataGridView.CurrentRow.Cells["IDENTIDAD"].Value.ToString();
-                vista.FechaPTextBox.Text = vista.ClientesdataGridView.CurrentRow.Cells["IDENTIDAD"].Value.ToString();
-                vista.FechaETextBox.Text = vista.ClientesdataGridView.CurrentRow.Cells["IDENTIDAD"].Value.ToString();
-                vista.PreciotextBox.Text = vista.ClientesdataGridView.CurrentRow.Cells["DIRECCION"].Value.ToString();
+                //vista.IdtextBox.Text = vista.RegistrardataGridView.CurrentRow.Cells["ID"].Value.ToString();
+                vista.NombreTextBox.Text = vista.RegistrardataGridView.CurrentRow.Cells["NOMBRE"].Value.ToString();
+                vista.NumeroTextBox.Text = vista.RegistrardataGridView.CurrentRow.Cells["NUMERO"].Value.ToString();
+                vista.NombreLTextBox.Text = vista.RegistrardataGridView.CurrentRow.Cells["LIBRO"].Value.ToString();
+                vista.FechaPTextBox.Text = vista.RegistrardataGridView.CurrentRow.Cells["FECHAP"].Value.ToString();
+                vista.FechaETextBox.Text = vista.RegistrardataGridView.CurrentRow.Cells["FECHAE"].Value.ToString();
+                vista.PreciotextBox.Text = vista.RegistrardataGridView.CurrentRow.Cells["PRECIO"].Value.ToString();
 
                
             }
@@ -73,7 +72,7 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
 
         private void ListarClientes()
         {
-            vista.ClientesdataGridView.DataSource = clienteDAO.GetClientes();
+            vista.RegistrardataGridView.DataSource = clienteDAO.GetClientes();
         }
 
        
@@ -102,6 +101,24 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
             {
                 vista.errorProvider1.SetError(vista.NombreLTextBox, "Ingrese el nombre del libro");
                 vista.NombreLTextBox.Focus();
+                return;
+            }
+            if (vista.FechaPTextBox.Text == "")
+            {
+                vista.errorProvider1.SetError(vista.FechaPTextBox, "Ingrese la fecha de prestamo");
+                vista.FechaPTextBox.Focus();
+                return;
+            }
+            if (vista.FechaETextBox.Text == "")
+            {
+                vista.errorProvider1.SetError(vista.FechaETextBox, "Ingrese el nombre del libro");
+                vista.FechaETextBox.Focus();
+                return;
+            }
+            if (vista.PreciotextBox.Text == "")
+            {
+                vista.errorProvider1.SetError(vista.PreciotextBox, "Ingrese el nombre del libro");
+                vista.PreciotextBox.Focus();
                 return;
             }
 
@@ -165,8 +182,8 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
             vista.PreciotextBox.Enabled = true;
 
 
-            vista.ModificarButton.Enabled = false;
-            vista.NuevoButton.Enabled = false;
+            vista.ModificarButton.Enabled = true;
+            vista.NuevoButton.Enabled = true;
         }
 
         private void LimpiarControles()
@@ -193,6 +210,7 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
             vista.ModificarButton.Enabled = true;
             vista.NuevoButton.Enabled = true;
         }
+
 
     }
 }

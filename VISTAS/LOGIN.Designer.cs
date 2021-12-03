@@ -29,19 +29,19 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtContraseña
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox2.Location = new System.Drawing.Point(218, 198);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(138, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtContraseña.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtContraseña.Location = new System.Drawing.Point(218, 198);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
+            this.txtContraseña.Size = new System.Drawing.Size(138, 20);
+            this.txtContraseña.TabIndex = 11;
             // 
             // textBox1
             // 
@@ -71,7 +71,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.BackgroundImage = global::PROYECTO_BIBLIOTECA.Properties.Resources.login_web_dark_screen_template_vector_10474423;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(456, 385);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnLogin);
             this.Name = "LOGIN";
@@ -82,7 +82,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         }
 
         #endregion
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtContraseña;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Button btnLogin;
     }

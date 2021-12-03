@@ -31,6 +31,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.EliminarButton = new System.Windows.Forms.Button();
             this.PreciotextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.FechaETextBox = new System.Windows.Forms.TextBox();
@@ -48,11 +49,10 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ClientesdataGridView = new System.Windows.Forms.DataGridView();
-            this.EliminarButton = new System.Windows.Forms.Button();
+            this.RegistrardataGridView = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ClientesdataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RegistrardataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +85,19 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Cliente:";
+            // 
+            // EliminarButton
+            // 
+            this.EliminarButton.BackColor = System.Drawing.Color.DarkGray;
+            this.EliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EliminarButton.ForeColor = System.Drawing.Color.Black;
+            this.EliminarButton.Location = new System.Drawing.Point(144, 180);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(86, 26);
+            this.EliminarButton.TabIndex = 14;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.UseVisualStyleBackColor = false;
             // 
             // PreciotextBox
             // 
@@ -200,7 +213,6 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label4.Size = new System.Drawing.Size(105, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "NOMBRE LIBRO:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // NumeroTextBox
             // 
@@ -221,7 +233,6 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.IdtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IdtextBox.Location = new System.Drawing.Point(171, 23);
             this.IdtextBox.Name = "IdtextBox";
-            this.IdtextBox.ReadOnly = true;
             this.IdtextBox.Size = new System.Drawing.Size(118, 20);
             this.IdtextBox.TabIndex = 3;
             // 
@@ -261,26 +272,13 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label1.TabIndex = 0;
             this.label1.Text = "NOMBRE:";
             // 
-            // ClientesdataGridView
+            // RegistrardataGridView
             // 
-            this.ClientesdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClientesdataGridView.Location = new System.Drawing.Point(-2, 243);
-            this.ClientesdataGridView.Name = "ClientesdataGridView";
-            this.ClientesdataGridView.Size = new System.Drawing.Size(804, 182);
-            this.ClientesdataGridView.TabIndex = 9;
-            // 
-            // EliminarButton
-            // 
-            this.EliminarButton.BackColor = System.Drawing.Color.DarkGray;
-            this.EliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarButton.ForeColor = System.Drawing.Color.Black;
-            this.EliminarButton.Location = new System.Drawing.Point(144, 180);
-            this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(86, 26);
-            this.EliminarButton.TabIndex = 14;
-            this.EliminarButton.Text = "Eliminar";
-            this.EliminarButton.UseVisualStyleBackColor = false;
+            this.RegistrardataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RegistrardataGridView.Location = new System.Drawing.Point(-2, 243);
+            this.RegistrardataGridView.Name = "RegistrardataGridView";
+            this.RegistrardataGridView.Size = new System.Drawing.Size(804, 182);
+            this.RegistrardataGridView.TabIndex = 9;
             // 
             // errorProvider1
             // 
@@ -293,13 +291,13 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(802, 425);
-            this.Controls.Add(this.ClientesdataGridView);
+            this.Controls.Add(this.RegistrardataGridView);
             this.Controls.Add(this.groupBox1);
             this.Name = "REGISTRAR";
             this.Text = "REGISTRAR";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ClientesdataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RegistrardataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
@@ -314,7 +312,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.DataGridView ClientesdataGridView;
+        public System.Windows.Forms.DataGridView RegistrardataGridView;
         public System.Windows.Forms.Button NuevoButton;
         public System.Windows.Forms.Button ModificarButton;
         public System.Windows.Forms.Button GuardarButton;

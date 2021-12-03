@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PROYECTO_BIBLIOTECA.CONTROLADORES;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,8 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         public REGISTRAR()
         {
             InitializeComponent();
+            Cliente_Controller controlador = new Cliente_Controller(this);
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
