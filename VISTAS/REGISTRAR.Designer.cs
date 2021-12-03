@@ -48,6 +48,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +56,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.txtPrecio);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.textBox6);
@@ -113,7 +115,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(242, 179);
+            this.button1.Location = new System.Drawing.Point(259, 179);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 27);
             this.button1.TabIndex = 6;
@@ -126,7 +128,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(451, 179);
+            this.button3.Location = new System.Drawing.Point(484, 179);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 27);
             this.button3.TabIndex = 8;
@@ -146,7 +148,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(346, 179);
+            this.button2.Location = new System.Drawing.Point(367, 179);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 27);
             this.button2.TabIndex = 7;
@@ -264,6 +266,19 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.dataGridView1.Size = new System.Drawing.Size(804, 182);
             this.dataGridView1.TabIndex = 9;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DarkGray;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(144, 180);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(86, 26);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // REGISTRAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,5 +318,6 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         public System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button4;
     }
 }
