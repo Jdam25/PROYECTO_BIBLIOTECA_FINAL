@@ -35,5 +35,27 @@ namespace PROYECTO_BIBLIOTECA.MODELOS.DAO
             return valido;
         }
 
+        public DataTable Detalle()
+        {
+            DataTable rt = new DataTable();
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT *  FROM REGISTRAR");
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = sql.ToString();
+
+                SqlDataReader dr = comando.ExecuteReader();
+                rt.Load(dr);
+            }
+            catch (Exception)
+            {
+            }
+
+            return rt;
+        }
     }
 }

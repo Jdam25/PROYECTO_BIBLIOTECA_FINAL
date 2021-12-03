@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PROYECTO_BIBLIOTECA.MODELOS.ENTIDADES
 {
-    public class Detalle
+    public class Detalles
     {
         public int Id { get; set; }
         public string Nombre { get; set; }

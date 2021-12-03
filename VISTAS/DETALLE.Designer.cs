@@ -1,7 +1,7 @@
 ﻿
 namespace PROYECTO_BIBLIOTECA.VISTAS
 {
-    partial class FACTURA
+    partial class DETALLE
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,21 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DetalledataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DetalledataGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.DetalledataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-4, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(774, 212);
-            this.dataGridView1.TabIndex = 0;
+            this.DetalledataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DetalledataGridView.Location = new System.Drawing.Point(-4, 153);
+            this.DetalledataGridView.Name = "DetalledataGridView";
+            this.DetalledataGridView.Size = new System.Drawing.Size(774, 212);
+            this.DetalledataGridView.TabIndex = 0;
             // 
             // label1
             // 
@@ -68,7 +68,7 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label2.TabIndex = 3;
             this.label2.Text = "Francis Bacon, escritor y filósofo.";
             // 
-            // FACTURA
+            // DETALLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,19 +76,18 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.ClientSize = new System.Drawing.Size(767, 365);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "FACTURA";
+            this.Controls.Add(this.DetalledataGridView);
+            this.Name = "DETALLE";
             this.Text = "DETALLES DE REGISTROS";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.DataGridView DetalledataGridView;
     }
 }

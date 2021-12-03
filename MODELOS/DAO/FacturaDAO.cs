@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Data;
 using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
+using PROYECTO_BIBLIOTECA.MODELOS.ENTIDADES;
 
 namespace PROYECTO_BIBLIOTECA.MODELOS.DAO
 {
     public class FacturaDAO
     {
 
+        
     }
 }

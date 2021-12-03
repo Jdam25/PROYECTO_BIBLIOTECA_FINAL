@@ -3,11 +3,12 @@ using System.Windows.Forms;
 
 namespace PROYECTO_BIBLIOTECA.VISTAS
 {
-    public partial class FACTURA : Form
+    public partial class DETALLE : Form
     {
-        public FACTURA()
+        public DETALLE()
         {
             InitializeComponent();
+
             Detalle_Controller Detalle = new Detalle_Controller(this);
 
         }

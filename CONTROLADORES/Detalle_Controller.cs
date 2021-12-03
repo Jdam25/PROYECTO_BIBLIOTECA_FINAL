@@ -2,8 +2,6 @@
 using PROYECTO_BIBLIOTECA.MODELOS.ENTIDADES;
 using PROYECTO_BIBLIOTECA.VISTAS;
 using System;
-using System.Windows.Forms;
-using System.Collections.Generic;
 
 
 namespace PROYECTO_BIBLIOTECA.CONTROLADORES
@@ -15,7 +13,7 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
         Usuario user = new Usuario();
         DETALLE VISTAS;
 
-        public Detalle_Controller(Detalle view)
+        public Detalle_Controller(DETALLE view)
         {
                 VISTAS = view;
 
@@ -30,7 +28,7 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
 
         private void Details()
         {
-            VISTAS.RegistrardataGridView.DataSource = UsuarioDao.Detalle();
+            VISTAS.DetalledataGridView.DataSource = usuarioDao.Detalle();
         }
     }
 }

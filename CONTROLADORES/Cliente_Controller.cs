@@ -111,13 +111,13 @@ namespace PROYECTO_BIBLIOTECA.CONTROLADORES
             }
             if (vista.FechaETextBox.Text == "")
             {
-                vista.errorProvider1.SetError(vista.FechaETextBox, "Ingrese el nombre del libro");
+                vista.errorProvider1.SetError(vista.FechaETextBox, "Ingrese la fecha de entrega");
                 vista.FechaETextBox.Focus();
                 return;
             }
             if (vista.PreciotextBox.Text == "")
             {
-                vista.errorProvider1.SetError(vista.PreciotextBox, "Ingrese el nombre del libro");
+                vista.errorProvider1.SetError(vista.PreciotextBox, "Ingrese el precio del prestamo del libro");
                 vista.PreciotextBox.Focus();
                 return;
             }

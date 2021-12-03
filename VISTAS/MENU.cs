@@ -1,33 +1,58 @@
-﻿using PROYECTO_BIBLIOTECA.MODELOS.DAO;
-using System;
+﻿using System;
 using System.Windows.Forms;
-using PROYECTO_BIBLIOTECA.MODELOS.ENTIDADES;
 
 namespace PROYECTO_BIBLIOTECA.VISTAS
 {
-    public partial class MENU : Form
+    public partial class MENU : Syncfusion.Windows.Forms.Office2010Form
     {
         public MENU()
         {
             InitializeComponent();
         }
-
+        TERMINOS Terminos;
+        REGISTRAR users;
+        DETALLE Detalle;
+      
+        
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            REGISTRAR users = new REGISTRAR();
-            users.Show();
+
+            if (users == null)
+            {
+                users = new REGISTRAR();
+                users.MdiParent = this;
+                users.FormClosed += Users_FormClosed;
+                users.Show();
+            }
+            else
+            {
+                users.Activate();
+            }
+
         }
 
+        private void Users_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            users = null;
+        }
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            TERMINOS users = new TERMINOS();
-            users.Show();
+            if (Terminos == null)
+            {
+                Terminos = new TERMINOS();
+                Terminos.MdiParent = this;
+                //Terminos.FormClosed += TERMINOS_FormClosed;
+                Terminos.Show();
+            }
+            else
+            {
+                users.Activate();
+            }
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-           // VISTAS.RegistrardataGridView.DataSource = UsuarioDao.Cliente();
-            FACTURA users = new FACTURA();
+            DETALLE users = new DETALLE();
             users.Show();
         }
     }

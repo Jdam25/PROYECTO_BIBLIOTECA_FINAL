@@ -69,7 +69,7 @@
     <Compile Include="MODELOS\DAO\FacturaDAO.cs" />
     <Compile Include="MODELOS\DAO\UsuarioDao.cs" />
     <Compile Include="MODELOS\ENTIDADES\Cliente.cs" />
-    <Compile Include="MODELOS\ENTIDADES\Detalle.cs" />
+    <Compile Include="MODELOS\ENTIDADES\Detalles.cs" />
     <Compile Include="MODELOS\ENTIDADES\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
