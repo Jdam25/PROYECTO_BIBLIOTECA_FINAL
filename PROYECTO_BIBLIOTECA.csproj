@@ -61,9 +61,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CONTROLADORES\Cliente_Controller.cs" />
+    <Compile Include="CONTROLADORES\Factura_Controller.cs" />
     <Compile Include="CONTROLADORES\Login_Controller.cs" />
+    <Compile Include="MODELOS\DAO\ClienteDAO.cs" />
     <Compile Include="MODELOS\DAO\Conexion.cs" />
+    <Compile Include="MODELOS\DAO\FacturaDAO.cs" />
     <Compile Include="MODELOS\DAO\UsuarioDao.cs" />
+    <Compile Include="MODELOS\ENTIDADES\Cliente.cs" />
+    <Compile Include="MODELOS\ENTIDADES\Factura.cs" />
     <Compile Include="MODELOS\ENTIDADES\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -29,48 +29,51 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.PreciotextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.FechaETextBox = new System.Windows.Forms.TextBox();
+            this.GuardarButton = new System.Windows.Forms.Button();
+            this.NuevoButton = new System.Windows.Forms.Button();
+            this.FechaPTextBox = new System.Windows.Forms.TextBox();
+            this.ModificarButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.NombreLTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NumeroTextBox = new System.Windows.Forms.TextBox();
+            this.NombreTextBox = new System.Windows.Forms.TextBox();
+            this.IdtextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ClientesdataGridView = new System.Windows.Forms.DataGridView();
+            this.EliminarButton = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClientesdataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.EliminarButton);
+            this.groupBox1.Controls.Add(this.PreciotextBox);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.FechaETextBox);
+            this.groupBox1.Controls.Add(this.GuardarButton);
+            this.groupBox1.Controls.Add(this.NuevoButton);
+            this.groupBox1.Controls.Add(this.FechaPTextBox);
+            this.groupBox1.Controls.Add(this.ModificarButton);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.NombreLTextBox);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.NumeroTextBox);
+            this.groupBox1.Controls.Add(this.NombreTextBox);
+            this.groupBox1.Controls.Add(this.IdtextBox);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -83,12 +86,12 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Cliente:";
             // 
-            // txtPrecio
+            // PreciotextBox
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(611, 137);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(135, 24);
-            this.txtPrecio.TabIndex = 13;
+            this.PreciotextBox.Location = new System.Drawing.Point(611, 137);
+            this.PreciotextBox.Name = "PreciotextBox";
+            this.PreciotextBox.Size = new System.Drawing.Size(135, 24);
+            this.PreciotextBox.TabIndex = 13;
             // 
             // label7
             // 
@@ -102,58 +105,58 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label7.TabIndex = 12;
             this.label7.Text = "PRECIO:";
             // 
-            // textBox6
+            // FechaETextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(611, 95);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(135, 24);
-            this.textBox6.TabIndex = 11;
+            this.FechaETextBox.Location = new System.Drawing.Point(611, 95);
+            this.FechaETextBox.Name = "FechaETextBox";
+            this.FechaETextBox.Size = new System.Drawing.Size(135, 24);
+            this.FechaETextBox.TabIndex = 11;
             // 
-            // button1
+            // GuardarButton
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(259, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 27);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.GuardarButton.BackColor = System.Drawing.Color.DarkGray;
+            this.GuardarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GuardarButton.ForeColor = System.Drawing.Color.Black;
+            this.GuardarButton.Location = new System.Drawing.Point(259, 179);
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.Size = new System.Drawing.Size(84, 27);
+            this.GuardarButton.TabIndex = 6;
+            this.GuardarButton.Text = "Guardar";
+            this.GuardarButton.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // NuevoButton
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkGray;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(484, 179);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 27);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Nuevo";
-            this.button3.UseVisualStyleBackColor = false;
+            this.NuevoButton.BackColor = System.Drawing.Color.DarkGray;
+            this.NuevoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NuevoButton.ForeColor = System.Drawing.Color.Black;
+            this.NuevoButton.Location = new System.Drawing.Point(484, 179);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(88, 27);
+            this.NuevoButton.TabIndex = 8;
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // FechaPTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(610, 57);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(136, 24);
-            this.textBox5.TabIndex = 10;
+            this.FechaPTextBox.Location = new System.Drawing.Point(610, 57);
+            this.FechaPTextBox.Name = "FechaPTextBox";
+            this.FechaPTextBox.Size = new System.Drawing.Size(136, 24);
+            this.FechaPTextBox.TabIndex = 10;
             // 
-            // button2
+            // ModificarButton
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(367, 179);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 27);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.ModificarButton.BackColor = System.Drawing.Color.DarkGray;
+            this.ModificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ModificarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModificarButton.ForeColor = System.Drawing.Color.Black;
+            this.ModificarButton.Location = new System.Drawing.Point(367, 179);
+            this.ModificarButton.Name = "ModificarButton";
+            this.ModificarButton.Size = new System.Drawing.Size(85, 27);
+            this.ModificarButton.TabIndex = 7;
+            this.ModificarButton.Text = "Modificar";
+            this.ModificarButton.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
@@ -179,12 +182,12 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label5.TabIndex = 8;
             this.label5.Text = "FECHA PRESTAMO:";
             // 
-            // textBox4
+            // NombreLTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(171, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(244, 24);
-            this.textBox4.TabIndex = 7;
+            this.NombreLTextBox.Location = new System.Drawing.Point(171, 138);
+            this.NombreLTextBox.Name = "NombreLTextBox";
+            this.NombreLTextBox.Size = new System.Drawing.Size(244, 24);
+            this.NombreLTextBox.TabIndex = 7;
             // 
             // label4
             // 
@@ -199,28 +202,28 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label4.Text = "NOMBRE LIBRO:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox3
+            // NumeroTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(171, 95);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 24);
-            this.textBox3.TabIndex = 5;
+            this.NumeroTextBox.Location = new System.Drawing.Point(171, 95);
+            this.NumeroTextBox.Name = "NumeroTextBox";
+            this.NumeroTextBox.Size = new System.Drawing.Size(245, 24);
+            this.NumeroTextBox.TabIndex = 5;
             // 
-            // textBox2
+            // NombreTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 24);
-            this.textBox2.TabIndex = 4;
+            this.NombreTextBox.Location = new System.Drawing.Point(171, 57);
+            this.NombreTextBox.Name = "NombreTextBox";
+            this.NombreTextBox.Size = new System.Drawing.Size(245, 24);
+            this.NombreTextBox.TabIndex = 4;
             // 
-            // textBox1
+            // IdtextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(171, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(118, 20);
-            this.textBox1.TabIndex = 3;
+            this.IdtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdtextBox.Location = new System.Drawing.Point(171, 23);
+            this.IdtextBox.Name = "IdtextBox";
+            this.IdtextBox.ReadOnly = true;
+            this.IdtextBox.Size = new System.Drawing.Size(118, 20);
+            this.IdtextBox.TabIndex = 3;
             // 
             // label3
             // 
@@ -258,26 +261,30 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.label1.TabIndex = 0;
             this.label1.Text = "NOMBRE:";
             // 
-            // dataGridView1
+            // ClientesdataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-2, 243);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(804, 182);
-            this.dataGridView1.TabIndex = 9;
+            this.ClientesdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ClientesdataGridView.Location = new System.Drawing.Point(-2, 243);
+            this.ClientesdataGridView.Name = "ClientesdataGridView";
+            this.ClientesdataGridView.Size = new System.Drawing.Size(804, 182);
+            this.ClientesdataGridView.TabIndex = 9;
             // 
-            // button4
+            // EliminarButton
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkGray;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(144, 180);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 26);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Eliminar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.EliminarButton.BackColor = System.Drawing.Color.DarkGray;
+            this.EliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EliminarButton.ForeColor = System.Drawing.Color.Black;
+            this.EliminarButton.Location = new System.Drawing.Point(144, 180);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(86, 26);
+            this.EliminarButton.TabIndex = 14;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.UseVisualStyleBackColor = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // REGISTRAR
             // 
@@ -286,13 +293,14 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(802, 425);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ClientesdataGridView);
             this.Controls.Add(this.groupBox1);
             this.Name = "REGISTRAR";
             this.Text = "REGISTRAR";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClientesdataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,24 +308,25 @@ namespace PROYECTO_BIBLIOTECA.VISTAS
         #endregion
 
         public System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.DataGridView dataGridView1;
-        public System.Windows.Forms.Button button3;
-        public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtPrecio;
+        public System.Windows.Forms.DataGridView ClientesdataGridView;
+        public System.Windows.Forms.Button NuevoButton;
+        public System.Windows.Forms.Button ModificarButton;
+        public System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Button EliminarButton;
+        public System.Windows.Forms.TextBox FechaETextBox;
+        public System.Windows.Forms.TextBox FechaPTextBox;
+        public System.Windows.Forms.TextBox NombreLTextBox;
+        public System.Windows.Forms.TextBox NumeroTextBox;
+        public System.Windows.Forms.TextBox NombreTextBox;
+        public System.Windows.Forms.TextBox IdtextBox;
+        public System.Windows.Forms.TextBox PreciotextBox;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
